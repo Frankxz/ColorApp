@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  HW2
-//
-//  Created by Robert Miller on 10.07.2021.
-//
 
 import UIKit
 
@@ -27,19 +21,28 @@ class ViewController: UIViewController {
         blueValue.lineBreakMode = .byCharWrapping
         
         display.layer.cornerRadius = 30
-        display.alpha = 0.2
     }
 
     @IBAction func redSliderAction() {
-        redValue.text = String(redSlider.value)
+        redValue.text = String(NSString(format: "%.1f", redSlider.value))
+        changeColor()
     }
     
     @IBAction func greenSliderAction() {
-        greenValue.text = String(greenSlider.value)
+        greenValue.text = String(NSString(format: "%.1f", greenSlider.value))
+        changeColor()
     }
     
     @IBAction func blueSliderAction() {
-        blueValue.text = String(blueSlider.value)
+        blueValue.text = String(NSString(format: "%.1f", blueSlider.value))
+        changeColor()
+    }
+    
+    private func changeColor(){
+        display.backgroundColor = UIColor(red: CGFloat(redSlider.value),
+                                          green: CGFloat(greenSlider.value),
+                                          blue: CGFloat(blueSlider.value),
+                                          alpha: 1)
     }
 }
 

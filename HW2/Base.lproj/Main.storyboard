@@ -18,7 +18,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-s2-Ig7">
                                 <rect key="frame" x="33" y="60" width="349" height="210"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ez1-s2-Ig7" secondAttribute="height" multiplier="349:210" id="hn3-hK-rMU"/>
                                 </constraints>
@@ -62,37 +62,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NX-h6-AqW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NX-h6-AqW">
                                 <rect key="frame" x="84" y="402" width="25" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTv-Nf-fKO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTv-Nf-fKO">
                                 <rect key="frame" x="84" y="356" width="25" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-WN-sMH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-WN-sMH">
                                 <rect key="frame" x="84" y="313" width="25" height="21"/>
+                                <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="noq-kj-F1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="1Si-la-EnD"/>
                             <constraint firstItem="DTv-Nf-fKO" firstAttribute="top" secondItem="Ez1-s2-Ig7" secondAttribute="bottom" constant="86" id="3cQ-6L-mmO"/>
                             <constraint firstItem="S07-mE-z79" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Ho-l5-Jbc"/>
                             <constraint firstItem="gKq-wG-ypy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AQK-Mq-1DL"/>
                             <constraint firstItem="gKq-wG-ypy" firstAttribute="top" secondItem="tbT-ga-U8B" secondAttribute="bottom" constant="20" id="Brv-MR-fcO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yza-f5-nCw" secondAttribute="trailing" constant="32" id="CkJ-iz-8ka"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ez1-s2-Ig7" secondAttribute="trailing" constant="32" id="Q6t-Sn-jHN"/>
+                            <constraint firstItem="qjf-hs-mZk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="ZOV-4c-qmY"/>
                             <constraint firstItem="noq-kj-F1H" firstAttribute="top" secondItem="yza-f5-nCw" secondAttribute="bottom" constant="14" id="a1W-h8-KQ5"/>
                             <constraint firstItem="2NX-h6-AqW" firstAttribute="leading" secondItem="gKq-wG-ypy" secondAttribute="trailing" constant="25" id="cIF-c9-KQH"/>
                             <constraint firstItem="tbT-ga-U8B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ce3-Wi-T6P"/>
+                            <constraint firstItem="yza-f5-nCw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="cp4-Tr-zTt"/>
                             <constraint firstItem="DTv-Nf-fKO" firstAttribute="leading" secondItem="tbT-ga-U8B" secondAttribute="trailing" constant="6.5" id="cwx-JQ-hhZ"/>
                             <constraint firstItem="qjf-hs-mZk" firstAttribute="leading" secondItem="2NX-h6-AqW" secondAttribute="trailing" constant="14" id="e5J-RD-eJL"/>
                             <constraint firstItem="qjf-hs-mZk" firstAttribute="top" secondItem="noq-kj-F1H" secondAttribute="bottom" constant="14" id="emA-1C-Elf"/>
@@ -122,11 +126,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+            <point key="canvasLocation" x="17.39130434782609" y="75"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
@@ -137,9 +144,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
