@@ -15,8 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="NV8-ZN-kIH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4s-AS-l0T">
+                                <rect key="frame" x="138.66666666666666" y="351.66666666666669" width="98" height="108.66666666666669"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="91"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hbb-4p-Ksp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L4s-AS-l0T" firstAttribute="centerX" secondItem="NV8-ZN-kIH" secondAttribute="centerX" id="3mt-uE-UeA"/>
+                            <constraint firstItem="L4s-AS-l0T" firstAttribute="centerY" secondItem="NV8-ZN-kIH" secondAttribute="centerY" id="aOa-iF-Hgr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ihM-RG-IBq">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="czi-ob-lTX">
@@ -31,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="185.50724637681162" y="75"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Color settings-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="HW2" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,7 +191,7 @@
                             <constraint firstItem="S07-mE-z79" firstAttribute="top" secondItem="Ez1-s2-Ig7" secondAttribute="bottom" constant="39" id="zV4-zS-9iQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="KW2-di-Xv3"/>
+                    <navigationItem key="navigationItem" title="Color settings" id="KW2-di-Xv3"/>
                     <connections>
                         <outlet property="blueSlider" destination="qjf-hs-mZk" id="gBD-ZF-4kZ"/>
                         <outlet property="blueTextField" destination="bHx-ce-OHN" id="obG-p1-T3M"/>
