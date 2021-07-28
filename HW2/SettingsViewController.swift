@@ -1,7 +1,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     @IBOutlet weak var redValue: UILabel!
     @IBOutlet weak var greenValue: UILabel!
@@ -13,14 +13,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var display: UIView!
     
+    var redPoint: CGFloat = 1.0
+    var greenPoint: CGFloat = 1.0
+    var bluePoint: CGFloat = 1.0
+    
+    var beginColor: UIColor!
+    var delegate: SettingsViewControllerDelegate!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.hidesBackButton = true
+        display.backgroundColor = beginColor
+            
         redValue.lineBreakMode = .byCharWrapping
         greenValue.lineBreakMode = .byCharWrapping
         blueValue.lineBreakMode = .byCharWrapping
         
+        redSlider.value = Float (redPoint)
+        greenSlider.value = Float (greenPoint)
+        blueSlider.value = Float (bluePoint)
+    
         display.layer.cornerRadius = 30
+        
     }
 
     @IBAction func redSliderAction() {
@@ -43,6 +57,7 @@ class ViewController: UIViewController {
                                           green: CGFloat(greenSlider.value),
                                           blue: CGFloat(blueSlider.value),
                                           alpha: 1)
+        delegate.changeBackgroundColor(color: display.backgroundColor ?? UIColor.red)
     }
 }
 
