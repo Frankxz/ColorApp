@@ -36,11 +36,20 @@ class SettingsViewController: UIViewController {
         redSlider.value = Float (redPoint)
         greenSlider.value = Float (greenPoint)
         blueSlider.value = Float (bluePoint)
+        //NSString(format: "%.1f", redSlider.value)
+        
+        redTextField.text = String (NSString(format: "%.2f", redPoint))
+        greenTextField.text = String (NSString(format: "%.2f", greenPoint))
+        blueTextField.text = String (NSString(format: "%.2f", bluePoint))
+        
+        
         
         display.layer.cornerRadius = 30
         
     }
 
+  
+    
     @IBAction func redTFAction() {
         guard let text = redTextField.text else { return }
         guard let currentValue = Float(text) else {return}
@@ -61,6 +70,7 @@ class SettingsViewController: UIViewController {
         blueSlider.setValue(currentValue, animated: true)
         changeColor()
     }
+    
     
     @IBAction func redSliderAction() {
         redValue.text = String(NSString(format: "%.1f", redSlider.value))

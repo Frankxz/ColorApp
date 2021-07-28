@@ -115,7 +115,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="redTFAction" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rn8-UD-L0Y"/>
+                                            <action selector="redTFAction" destination="BYZ-38-t0r" eventType="editingChanged" id="pA6-BR-0JZ"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVW-4z-IYr">
@@ -123,7 +123,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="greenTFAction" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Tez-OF-Q8R"/>
+                                            <action selector="greenTFAction" destination="BYZ-38-t0r" eventType="editingChanged" id="j7h-VR-v4w"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-ce-OHN">
@@ -131,7 +131,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="blueTFAction" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XJV-yF-WiL"/>
+                                            <action selector="blueTFAction" destination="BYZ-38-t0r" eventType="editingChanged" id="Kmo-0q-gUr"/>
                                         </connections>
                                     </textField>
                                 </subviews>
