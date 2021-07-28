@@ -105,22 +105,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yYz-2s-85Q">
-                                <rect key="frame" x="300" y="329.66666666666669" width="32" height="118"/>
+                                <rect key="frame" x="300" y="329.66666666666669" width="45" height="118"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-Oh-4f3">
-                                        <rect key="frame" x="0.0" y="0.0" width="32" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AP6-Oh-4f3">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="s3u-P1-N0P"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="redTFAction" destination="BYZ-38-t0r" eventType="editingDidEnd" id="rn8-UD-L0Y"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVW-4z-IYr">
-                                        <rect key="frame" x="0.0" y="42" width="32" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVW-4z-IYr">
+                                        <rect key="frame" x="0.0" y="42" width="45" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="greenTFAction" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Tez-OF-Q8R"/>
+                                        </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-ce-OHN">
-                                        <rect key="frame" x="0.0" y="84" width="32" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.00" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bHx-ce-OHN">
+                                        <rect key="frame" x="0.0" y="84" width="45" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="blueTFAction" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XJV-yF-WiL"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -170,11 +182,14 @@
                     <navigationItem key="navigationItem" id="KW2-di-Xv3"/>
                     <connections>
                         <outlet property="blueSlider" destination="qjf-hs-mZk" id="gBD-ZF-4kZ"/>
+                        <outlet property="blueTextField" destination="bHx-ce-OHN" id="obG-p1-T3M"/>
                         <outlet property="blueValue" destination="2NX-h6-AqW" id="3bB-wa-dDK"/>
                         <outlet property="display" destination="Ez1-s2-Ig7" id="A4P-Ps-oX9"/>
                         <outlet property="greenSlider" destination="noq-kj-F1H" id="7U2-wD-m8N"/>
+                        <outlet property="greenTextField" destination="VVW-4z-IYr" id="cnl-I3-PdH"/>
                         <outlet property="greenValue" destination="DTv-Nf-fKO" id="cxl-3I-Xa0"/>
                         <outlet property="redSlider" destination="yza-f5-nCw" id="GVU-Eg-5AM"/>
+                        <outlet property="redTextField" destination="AP6-Oh-4f3" id="YZP-GA-ETA"/>
                         <outlet property="redValue" destination="gOg-WN-sMH" id="Wdr-c3-Pgz"/>
                     </connections>
                 </viewController>
