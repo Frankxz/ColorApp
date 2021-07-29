@@ -19,9 +19,9 @@ class MainDisplayViewController: UIViewController {
         settingsVC.beginColor = view.backgroundColor
         settingsVC.delegate = self
         
-        settingsVC.redPoint = (view.backgroundColor?.components.red)!
-        settingsVC.greenPoint = (view.backgroundColor?.components.green)!
-        settingsVC.bluePoint = (view.backgroundColor?.components.blue)!
+        settingsVC.redPoint = (view.backgroundColor?.components.red) ?? 1.0
+        settingsVC.greenPoint = (view.backgroundColor?.components.green) ?? 1.0
+        settingsVC.bluePoint = (view.backgroundColor?.components.blue) ?? 1.0
         
         
         print("Gotcha")
@@ -36,13 +36,15 @@ class MainDisplayViewController: UIViewController {
     }
     
 }
+
+// MARK: - Delegate
 extension MainDisplayViewController: SettingsViewControllerDelegate {
     func changeBackgroundColor(color: UIColor) {
         view.backgroundColor = color
-       
     }
-
 }
+
+// MARK: - UIColor extension
 extension UIColor {
     var coreImageColor: CIColor {
         return CIColor(color: self)
