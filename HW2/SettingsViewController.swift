@@ -36,7 +36,7 @@ class SettingsViewController: UIViewController {
         redSlider.value = Float (redPoint)
         greenSlider.value = Float (greenPoint)
         blueSlider.value = Float (bluePoint)
-        //NSString(format: "%.1f", redSlider.value)
+       
         
         redTextField.text = String (NSString(format: "%.2f", redPoint))
         greenTextField.text = String (NSString(format: "%.2f", greenPoint))
