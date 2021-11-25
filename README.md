@@ -9,5 +9,5 @@ Here's a practice with constraints, protocols and delegation
 
 ## Screenshots
 
-![App Screenshot](https://sun9-56.userapi.com/impg/RE2disNP7HF1dz18LcVYV20FxO6sFBBzXLLDYQ/UaNQLjSPr-c.jpg?size=894x1404&quality=96&sign=f12d07750f21f15f426f5c465698a1b9&type=album)
-![App Screenshot](https://sun9-35.userapi.com/impg/hmx9hRIEyH45_VeT7WaZYSoOLurcXcZRnq63ew/p68VISuOy7I.jpg?size=882x1406&quality=96&sign=4faac5d80dc3832d1988ed013e5e45a3&type=album)
+![App Screenshot](https://sun9-80.userapi.com/impg/KLWxtzB2KlLsCFadQpiP_ucvvwf7ZEBxQy0GWg/iCwF0cnX3_A.jpg?size=834x696&quality=96&sign=68787d5c50b39a2e62af614246a91172&type=album)
+
