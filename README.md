@@ -1,7 +1,7 @@
 # ColorApp
 
 **Training app** \
-My first app. \
+
 Two simple screens, the first of which is the main one, and the second one adjusts the color of the first screen view. \
 Here's a practice with constraints, protocols and delegation
 
